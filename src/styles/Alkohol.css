@@ -1,0 +1,15 @@
+.alcohol-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.alcohol-image {
+    width: 220px; /* Všechny obrázky budou mít stejnou šířku */
+    height: 300px; /* A stejnou výšku */
+    object-fit: cover; /* Zachová správný poměr stran */
+    border-radius: 10px; /* Přidání zaoblených rohů */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Jemný stín */
+}

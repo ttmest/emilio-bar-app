@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objednávkový Formulář</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            margin-bottom: 5px;
+            color: #555;
+            display: block;
+        }
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 0 auto;
+            display: block;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            width: 90%;
+            padding: 10px;
+            margin: 0 auto;
+            display: block;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #4cae4c;
+        }
+        .error-message {
+            color: red;
+            text-align: center;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Objednávka</h1>
+    <div class="error-message" id="error-message">Chyba při odesílání objednávky, není vyplněné jméno.</div>
+    <div class="form-group">
+        <label for="name">Jméno</label>
+        <input type="text" id="name" required>
+    </div>
+    <div class="form-group">
+        <label for="drink">Nápoj</label>
+        <input type="text" id="drink">  <!-- // required readonly> -->
+    </div>
+    <button id="submit-btn">Odeslat objednávku</button>
+</div>
+
+<!-- <script>
+    // Získání parametru drink z URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const drink = urlParams.get('drink');
+    
+    // Automatické nastavení drinku do formuláře
+    if (drink) {
+        document.getElementById('drink').value = drink;
+    }
+
+    document.getElementById('submit-btn').addEventListener('click', function() {
+        const name = document.getElementById('name').value;
+        const drink = document.getElementById('drink').value;
+
+        // Reset error message
+        document.getElementById('error-message').style.display = 'none';
+
+        fetch('https://tjxw40qbpe.execute-api.eu-central-1.amazonaws.com/prod/orders/submitOrder', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ name: name, drink: drink })
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            alert(data.message); // Zobrazí úspěšnou zprávu
+            // document.getElementById('name').value = '';
+            window.location.href = "index.html";
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            document.getElementById('error-message').style.display = 'block'; // Zobrazí chybovou zprávu
+        });
+    });
+</script> -->
+<script>
+    // Získání parametru drink z URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const drink = urlParams.get('drink');
+
+    // Automatické nastavení drinku do formuláře
+    if (drink) {
+        document.getElementById('drink').value = drink;
+    }
+
+    async function checkBarStatus() {
+        try {
+            // Kontrola otevření baru
+            const barStatusResponse = await fetch('https://tjxw40qbpe.execute-api.eu-central-1.amazonaws.com/prod/barStatus?drink=OpenHours');
+            const barStatus = await barStatusResponse.json();
+            if (!barStatus.current_available) {
+                alert('Omlouváme se, bar je momentálně zavřený.');
+                return false;
+            }
+
+            // Kontrola dostupnosti drinku
+            const drinkAvailabilityResponse = await fetch(`https://tjxw40qbpe.execute-api.eu-central-1.amazonaws.com/prod/drinks/getDrink?drink=${encodeURIComponent(drink)}`);
+            const drinkAvailability = await drinkAvailabilityResponse.json();
+            if (!drinkAvailability.available) {
+                alert('Omlouváme se, tento drink není momentálně dostupný.');
+                return false;
+            }
+
+            return true;
+        } catch (error) {
+            console.error('Error checking bar status or drink availability:', error);
+            alert('Chyba při ověřování dostupnosti baru nebo drinku.');
+            return false;
+        }
+    }
+
+    document.getElementById('submit-btn').addEventListener('click', async function() {
+        const name = document.getElementById('name').value;
+        const drink = document.getElementById('drink').value;
+
+        // Reset error message
+        document.getElementById('error-message').style.display = 'none';
+
+        if (!name.trim()) {
+            document.getElementById('error-message').textContent = 'Prosím, vyplňte své jméno.';
+            document.getElementById('error-message').style.display = 'block';
+            return;
+        }
+
+        // Kontrola dostupnosti baru a drinku
+        const isAvailable = await checkBarStatus();
+        if (!isAvailable) return;
+
+        // Odeslání objednávky
+        fetch('https://tjxw40qbpe.execute-api.eu-central-1.amazonaws.com/prod/orders/submitOrder', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ name: name, drink: drink })
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            alert(data.message); // Zobrazí úspěšnou zprávu
+            window.location.href = "index.html";
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            document.getElementById('error-message').textContent = 'Chyba při odesílání objednávky.';
+            document.getElementById('error-message').style.display = 'block';
+        });
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+/* DrinkCard.css */
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    padding: 20px;
+    max-width: 1800px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.drink-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    text-align: center;
+    overflow: hidden;
+    width: 90%;
+}
+
+.drink-card img {
+    width: 100%;
+    height: 400px; /* Menší výška obrázků pro lepší proporce */
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* .drink-card .content {
+    padding: 15px;
+    flex-grow: 1;
+} */
+.drink-card .content {
+    padding: 15px;
+    flex-grow: 1; /* Umožňuje obsahu zabrat volné místo */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Zarovnání obsahu na začátek a tlačítka na konec */
+    width: 80%;
+}
+
+.drink-card h3 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #333;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.drink-card p {
+    margin: 5px 0;
+    font-size: 16px;
+    text-align: center;
+}
+
+.drink-card b {
+    font-weight: 600;
+}
+
+.category-header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #575353; 
+    padding: 15px 20px; 
+    margin: 20px auto; 
+    border-radius: 10px; 
+    max-width: 1200px; 
+    width: 90%; 
+    color: var(--text-color); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+
+.category-header h2 {
+    margin: 0; 
+    font-size: 24px; 
+    color: var(--text-color); 
+}
+
+.toggle-icon {
+    font-size: 24px; /* Velikost textu tlačítka */
+    font-weight: bold; /* Tučný text */
+    background-color: transparent; /* Průhledné pozadí */
+    border: none; /* Žádné okraje */
+    color: var(--text-color); /* Barva textu */
+    cursor: pointer; /* Ukazatel při hoveru */
+    margin-left: auto; /* Zarovná tlačítko doprava */
+    display: flex; /* Zarovnání obsahu tlačítka */
+    align-items: center; /* Vertikální zarovnání obsahu */
+    outline: none; /* Zabrání modrému fokusovému rámečku */
+    flex-direction: row-reverse;
+}
+
+.toggle-icon:hover,
+.toggle-icon:focus {
+    background-color: transparent; /* Žádná změna pozadí při hoveru */
+    color: var(--text-color); /* Zůstává stejná barva textu */
+    transform: none; /* Žádná změna velikosti nebo zvýraznění */
+}
+
+.top-drinks-content {
+    padding: 10px 20px;
+    width: 55%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.order-button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #3ebb64; /* Zelené tlačítko */
+    color: white;
+}
+
+.order-button.disabled {
+    background-color: #ccc; /* Šedé tlačítko */
+    color: #666; /* Světlejší text */
+    cursor: not-allowed; /* Zakázaný kurzor */
+}
+
+.highlight {
+    height: 200px;
+    width: auto;
+    object-fit: cover;
+}
+
+.highlight:hover {
+    border: 2px solid #ff9900;
+    transform: scale(1.05);
+}

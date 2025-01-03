@@ -1,0 +1,73 @@
+/* Hamburger Menu Styles */
+.menu-container {
+    position: relative;
+}
+
+.menu-icon {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+}
+
+.menu-icon div {
+    width: 100%;
+    height: 3px;
+    background-color: black; /* Change color as needed */
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+.menu {
+    display: none; /* Skrýt menu, dokud není otevřeno */
+    position: absolute; /* Aby menu nebylo součástí toku dokumentu */
+    top: 60px; /* Umístění pod tlačítko */
+    right: 20px; /* Stejná vzdálenost od pravého okraje */
+    background-color: #303033; /* Pozadí menu */
+    border: 1px solid #ccc; /* Rámeček */
+    padding: 10px; /* Vnitřní okraje */
+    z-index: 1000; /* Zajistí, že menu bude nad ostatními prvky */
+    text-align: left;
+    border-radius: 10px
+}
+
+.menu-button {
+    position: absolute; /* Aby se posunul na pozici vpravo nahoře */
+    top: 20px; /* Nastav výšku od horního okraje */
+    right: 20px; /* Nastav vzdálenost od pravého okraje */
+    font-size: 24px; /* Zvětši velikost textu */
+    color: var(--text-color); /* Změň barvu na žlutou */
+    cursor: pointer; /* Ukazatel myši při najetí na tlačítko */
+}
+
+.menu.show {
+    display: block; /* Show the menu when active */
+}
+
+.menu-item {
+    padding: 10px 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee; /* Add separator between items */
+}
+
+.menu-item:hover {
+    background-color: #f0f0f0; /* Change background on hover */
+}
+
+.menu.active {
+    display: block; /* Zobrazit při aktivaci */
+}
+
+a {
+    color: #c9c9c9;
+}
+
+/* .menu ul {
+    list-style-position: inside;
+} */
+
+/* .menu li {
+    text-align: left;
+} */

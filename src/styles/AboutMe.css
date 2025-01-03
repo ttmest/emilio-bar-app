@@ -1,0 +1,91 @@
+/* .about-me {
+    width: 60%;
+    margin: 50px auto; 
+    padding: 20px;
+    background-color: #f5f5dc; 
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} */
+
+.about-me h2 {
+    text-align: center;
+    color: #333;
+    font-size: 28px;
+}
+.about-me h2 {
+    /*display: flex; /* Umožní umístit fotku vedle textu */
+    align-items: center; /* Zarovná obsah na střed vertikálně */
+}
+
+.about-me p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.image-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.image-container img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.back-to-home {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.about-me a {
+    color: #0000EE; /* Tmavší barva odkazu */
+    text-decoration: none; /* Odstraní podtržení odkazu */
+    font-weight: bold; /* Zesílí text odkazu */
+}
+
+.about-me a:visited {
+    color: #551A8B; /* Fialová barva pro navštívené odkazy */
+}
+.about-me a:hover {
+    color: #555; /* Odkaz při přejetí myší */
+    text-decoration: underline; /* Přidá podtržení při přejetí myší */
+}
+
+/* .profile-pic {
+    display: block; 
+    margin: 0 auto 10px; 
+    width: 300px; 
+    height: auto; 
+    border-radius: 50%; 
+    transition: transform 0.3s;
+}
+
+.profile-pic:hover {
+    transform: scale(1.1); 
+} */
+
+.profile-pic {
+    width: 85%; /* Obrázek se přizpůsobí šířce rámečku */
+    height: auto; /* Udrží správný poměr stran */
+    border-radius: 50%; /* Pokud chceš obrázek zaoblený */
+    object-fit: cover; /* Obrázek se přizpůsobí rámečku */
+    transition: transform 0.3s; /* Efekt při přejetí myší */
+}
+
+.profile-pic:hover {
+    transform: scale(1.1); /* Zvětšení při přejetí myší */
+}
+
+.about-me {
+    max-width: 800px; /* Maximální šířka pro rámeček */
+    margin: 0 auto; /* Vycentrování rámečku */
+    padding: 20px;
+    background-color: #f4f4f4; /* Změna pozadí rámečku */
+    border-radius: 10px; /* Zaoblené rohy rámečku */
+    text-align: center;
+}

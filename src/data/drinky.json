@@ -1,0 +1,727 @@
+[
+    {
+        "alcoholic": {
+            "BOOL": true
+        },
+        "available": {
+            "BOOL": false
+        },
+        "component": {
+            "S": "limetová šťáva, kokosový sirup, sodovka"
+        },
+        "image": {
+            "S": "coco_collins.jpg"
+        },
+        "mainComponent": {
+            "S": "Tmavý rum"
+        },
+        "category": {
+            "S": "Rum"
+        },
+        "drink": {
+            "S": "Coco Collins"
+        }
+    },
+    {
+        "alcoholic": {
+            "BOOL": true
+        },
+        "available": {
+            "BOOL": false
+        },
+        "component": {
+            "S": "Blue curacao, Sprite, grenadina"
+        },
+        "image": {
+            "S": "trikolora.jpg"
+        },
+        "mainComponent": {
+            "S": "Vodka"
+        },
+        "category": {
+            "S": "Vodka"
+        },
+        "drink": {
+            "S": "Francouzská trikolora"
+        }
+    },
+    {
+        "alcoholic": {
+            "BOOL": true
+        },
+        "available": {
+            "BOOL": true
+        },
+        "component": {
+            "S": "kávový likér, mléko"
+        },
+        "image": {
+            "S": "white_runssian1.jpg"
+        },
+        "mainComponent": {
+            "S": "Vodka"
+        },
+        "category": {
+            "S": "Vodka"
+        },
+        "drink": {
+            "S": "White Russian"
+        }
+    },
+    {
+        "alcoholic": {
+            "BOOL": true
+        },
+        "available": {
+            "BOOL": true
+        },
+        "subCategory": {
+            "S": "TOP"
+        },
+        "component": {
+            "S": "Coca cola, limetová šťáva"
+        },
+        "image": {
+            "S": "cuba_libre.jpg"
+        },
+        "mainComponent": {
+            "S": "Světlý rum"
+        },
+        "category": {
+            "S": "Rum"
+        },
+        "drink": {
+            "S": "Cuba Libre"
+        }
+    },
+    {
+        "alcoholic": {
+            "BOOL": true
+        },
+        "available": {
+            "BOOL": true
+        },
+        "component": {
+            "S": "pomerančový džus"
+        },
+        "image": {
+            "S": "vodka_dzus.jpg"
+        },
+        "mainComponent": {
+            "S": "Vodka"
+        },
+        "category": {
+            "S": "Vodka"
+        },
+        "drink": {
+            "S": "Vodka & Juice"
+        }
+    },
+    {
+        "alcoholic": {
+            "BOOL": true
+        },
+        "available": {
+            "BOOL": true
+        },
+        "component": {
+            "S": "Broskvový likér, Prosecco"
+        },
+        "image": {
+            "S": "peachm_martini.jpg"
+        },
+        "mainComponent": {
+            "S": "Vodka"
+        },
+        "category": {
+            "S": "Vodka"
+        },
+        "drink": {
+            "S": "Peach Martini"
+        }
+    },
+    {
+        "alcoholic": {
+            "BOOL": true
+        },
+        "available": {
+            "BOOL": true
+        },
+        "subCategory": {
+            "S": "TOP"
+        },
+        "component": {
+            "S": "Ginger beer, limetová šťáva"
+        },
+        "image": {
+            "S": "moscow_mule.jpg"
+        },
+        "mainComponent": {
+            "S": "Vodka"
+        },
+        "category": {
+            "S": "Vodka"
+        },
+        "drink": {
+            "S": "Moscow Mule"
+        }
+    },
+    {
+        "alcoholic": {
+            "BOOL": true
+        },
+        "available": {
+            "BOOL": true
+        },
+        "component": {
+            "S": "pomerančový džus, grenadina"
+        },
+        "image": {
+            "S": "tequila_sunrise.jpg"
+        },
+        "mainComponent": {
+            "S": "Tequila"
+        },
+        "category": {
+            "S": "Other"
+        },
+        "drink": {
+            "S": "Tequila Sunrise"
+        }
+    },
+    {
+        "alcoholic": {
+            "BOOL": false
+        },
+        "available": {
+            "BOOL": false
+        },
+        "component": {
+            "S": "Půlka limety, lístky máty"
+        },
+        "image": {
+            "S": "mojito-virgin.jpg"
+        },
+        "mainComponent": {
+            "S": "Kinley Pink Tonic"
+        },
+        "category": {
+            "S": "Non-Alcoholic"
+        },
+        "drink": {
+            "S": "Mojito bez alkoholu"
+        }
+    },
+    {
+        "alcoholic": {
+            "BOOL": true
+        },
+        "available": {
+            "BOOL": true
+        },
+        "component": {
+            "S": "Tonic"
+        },
+        "image": {
+            "S": "gin_tonic_woman.jpg"
+        },
+        "mainComponent": {
+            "S": "Gin"
+        },
+        "category": {
+            "S": "Gin"
+        },
+        "drink": {
+            "S": "Elegant Gin and Tonic"
+        }
+    },
+    {
+        "alcoholic": {
+            "BOOL": true
+        },
+        "available": {
+            "BOOL": false
+        },
+        "component": {
+            "S": "limeta, lístky máty, sodovka"
+        },
+        "image": {
+            "S": "mojito.jpg"
+        },
+        "mainComponent": {
+            "S": "Světlý rum"
+        },
+        "category": {
+            "S": "Rum"
+        },
+        "drink": {
+            "S": "Mojito"
+        }
+    },
+    {
+        "alcoholic": {
+            "BOOL": true
+        },
+        "available": {
+            "BOOL": true
+        },
+        "component": {
+            "S": "Kávový likér, Perníkový sirup, káva"
+        },
+        "image": {
+            "S": "espresso_martini-christmas.jpg"
+        },
+        "mainComponent": {
+            "S": "Vodka"
+        },
+        "category": {
+            "S": "Vodka"
+        },
+        "drink": {
+            "S": "Espresso Martini Christmas"
+        }
+    },
+    {
+        "alcoholic": {
+            "BOOL": true
+        },
+        "available": {
+            "BOOL": true
+        },
+        "subCategory": {
+            "S": "TOP"
+        },
+        "component": {
+            "S": "kávový likér"
+        },
+        "image": {
+            "S": "black_russian1.jpg"
+        },
+        "mainComponent": {
+            "S": "Vodka"
+        },
+        "category": {
+            "S": "Vodka"
+        },
+        "drink": {
+            "S": "Black Russian"
+        }
+    },
+    {
+        "alcoholic": {
+            "BOOL": true
+        },
+        "available": {
+            "BOOL": false
+        },
+        "component": {
+            "S": "Brusinkový džus, pomerančový likér, limetová šťáva, "
+        },
+        "image": {
+            "S": "cosmopolitan.jpg"
+        },
+        "mainComponent": {
+            "S": "Vodka"
+        },
+        "category": {
+            "S": "Vodka"
+        },
+        "drink": {
+            "S": "Cosmopolitan"
+        }
+    },
+    {
+        "alcoholic": {
+            "BOOL": true
+        },
+        "available": {
+            "BOOL": true
+        },
+        "component": {
+            "S": "Ananasový džus, Blue curacao, limetová šťáva"
+        },
+        "image": {
+            "S": "blue_hawaii.jpg"
+        },
+        "mainComponent": {
+            "S": "Světlý rum, Vodka"
+        },
+        "category": {
+            "S": "Rum"
+        },
+        "drink": {
+            "S": "Blue Hawaii"
+        }
+    },
+    {
+        "alcoholic": {
+            "BOOL": true
+        },
+        "available": {
+            "BOOL": true
+        },
+        "component": {
+            "S": "Tonic"
+        },
+        "image": {
+            "S": "gin_tonic.jpg"
+        },
+        "mainComponent": {
+            "S": "Gin"
+        },
+        "category": {
+            "S": "Gin"
+        },
+        "drink": {
+            "S": "Gentleman's Gin and Tonic"
+        }
+    },
+    {
+        "alcoholic": {
+            "BOOL": true
+        },
+        "available": {
+            "BOOL": true
+        },
+        "component": {
+            "S": "limetová šťáva, cukrový sirup, sodovka"
+        },
+        "image": {
+            "S": "tom_collins.jpg"
+        },
+        "mainComponent": {
+            "S": "Gin"
+        },
+        "category": {
+            "S": "Gin"
+        },
+        "drink": {
+            "S": "Tom Collins"
+        }
+    },
+    {
+        "alcoholic": {
+            "BOOL": true
+        },
+        "available": {
+            "BOOL": false
+        },
+        "component": {
+            "S": "pomerančový džus, Blue curacao, grenadina"
+        },
+        "image": {
+            "S": "rainbow.jpg"
+        },
+        "mainComponent": {
+            "S": "Tequila, Vodka"
+        },
+        "category": {
+            "S": "Other"
+        },
+        "drink": {
+            "S": "Rainbow drink"
+        }
+    },
+    {
+        "alcoholic": {
+            "BOOL": true
+        },
+        "available": {
+            "BOOL": true
+        },
+        "subCategory": {
+            "S": "TOP"
+        },
+        "component": {
+            "S": "limetová šťáva, cukrový sirup"
+        },
+        "image": {
+            "S": "daiquiri.jpg"
+        },
+        "mainComponent": {
+            "S": "Světlý rum"
+        },
+        "category": {
+            "S": "Rum"
+        },
+        "drink": {
+            "S": "Daiquiri"
+        }
+    },
+    {
+        "alcoholic": {
+            "BOOL": false
+        },
+        "available": {
+            "BOOL": true
+        },
+        "component": {
+            "S": "Smetana, kokosový sirup"
+        },
+        "image": {
+            "S": "pinacolada-virgin.jpg"
+        },
+        "mainComponent": {
+            "S": "Ananasový džus"
+        },
+        "category": {
+            "S": "Non-Alcoholic"
+        },
+        "drink": {
+            "S": "Piña Colada bez alkoholu"
+        }
+    },
+    {
+        "alcoholic": {
+            "BOOL": false
+        },
+        "available": {
+            "BOOL": true
+        },
+        "component": {
+            "S": "limetová šťáva, Blue curacao"
+        },
+        "image": {
+            "S": "lagoon-virgin.jpg"
+        },
+        "mainComponent": {
+            "S": "Kinley Pink Tonic"
+        },
+        "category": {
+            "S": "Non-Alcoholic"
+        },
+        "drink": {
+            "S": "Blue Lagoon bez alkoholu"
+        }
+    },
+    {
+        "alcoholic": {
+            "BOOL": true
+        },
+        "available": {
+            "BOOL": true
+        },
+        "component": {
+            "S": "Kávový likér, Cukrový sirup, káva"
+        },
+        "image": {
+            "S": "espresso_martini.jpg"
+        },
+        "mainComponent": {
+            "S": "Vodka"
+        },
+        "category": {
+            "S": "Vodka"
+        },
+        "drink": {
+            "S": "Espresso Martini"
+        }
+    },
+    {
+        "alcoholic": {
+            "BOOL": true
+        },
+        "available": {
+            "BOOL": true
+        },
+        "component": {
+            "S": "Blue curacao, Sprite"
+        },
+        "image": {
+            "S": "blue_sprite.jpg"
+        },
+        "mainComponent": {
+            "S": "Vodka"
+        },
+        "category": {
+            "S": "Vodka"
+        },
+        "drink": {
+            "S": "Blue Lagoon Sprite"
+        }
+    },
+    {
+        "alcoholic": {
+            "BOOL": true
+        },
+        "available": {
+            "BOOL": true
+        },
+        "component": {
+            "S": " limetová šťáva, Blue curacao, Kinley Pink Tonic"
+        },
+        "image": {
+            "S": "blue_lagoon.jpg"
+        },
+        "mainComponent": {
+            "S": "Vodka"
+        },
+        "category": {
+            "S": "Vodka"
+        },
+        "drink": {
+            "S": "Blue Lagoon"
+        }
+    },
+    {
+        "alcoholic": {
+            "BOOL": true
+        },
+        "available": {
+            "BOOL": true
+        },
+        "component": {
+            "S": "Campari, červený vermut"
+        },
+        "image": {
+            "S": "negroni.jpg"
+        },
+        "mainComponent": {
+            "S": "Gin"
+        },
+        "category": {
+            "S": "Gin"
+        },
+        "drink": {
+            "S": "Negroni"
+        }
+    },
+    {
+        "alcoholic": {
+            "BOOL": true
+        },
+        "available": {
+            "BOOL": true
+        },
+        "component": {
+            "S": "Citrónová šťáva, malinový sirup, vaječný bílek"
+        },
+        "image": {
+            "S": "clover-club.jpg"
+        },
+        "mainComponent": {
+            "S": "Gin"
+        },
+        "category": {
+            "S": "Gin"
+        },
+        "drink": {
+            "S": "Clover Club"
+        }
+    },
+    {
+        "alcoholic": {
+            "BOOL": true
+        },
+        "available": {
+            "BOOL": true
+        },
+        "component": {
+            "S": "Broskvový likér, pomerančový džus, brusinkový džus"
+        },
+        "image": {
+            "S": "sex_on_the_beach.jpg"
+        },
+        "mainComponent": {
+            "S": "Vodka"
+        },
+        "category": {
+            "S": "Vodka"
+        },
+        "drink": {
+            "S": "Sex on the beach"
+        }
+    },
+    {
+        "alcoholic": {
+            "BOOL": true
+        },
+        "available": {
+            "BOOL": false
+        },
+        "component": {
+            "S": "prosecco, sodovka"
+        },
+        "image": {
+            "S": "aperol.jpg"
+        },
+        "mainComponent": {
+            "S": "Aperol"
+        },
+        "category": {
+            "S": "Other"
+        },
+        "drink": {
+            "S": "Aperol Spritz"
+        }
+    },
+    {
+        "alcoholic": {
+            "BOOL": true
+        },
+        "available": {
+            "BOOL": true
+        },
+        "component": {
+            "S": "smetana, kokosový sirup, ananasový džus"
+        },
+        "image": {
+            "S": "pinacolada.jpg"
+        },
+        "mainComponent": {
+            "S": "Světlý rum"
+        },
+        "category": {
+            "S": "Rum"
+        },
+        "drink": {
+            "S": "Piña Colada"
+        }
+    },
+    {
+        "alcoholic": {
+            "BOOL": true
+        },
+        "available": {
+            "BOOL": true
+        },
+        "component": {
+            "S": "Ananasový džus"
+        },
+        "image": {
+            "S": "malibu_pineapple.jpg"
+        },
+        "mainComponent": {
+            "S": "Malibu"
+        },
+        "category": {
+            "S": "Other"
+        },
+        "drink": {
+            "S": "Malibu Pineapple"
+        }
+    },
+    {
+        "alcoholic": {
+            "BOOL": false
+        },
+        "available": {
+            "BOOL": true
+        },
+        "component": {
+            "S": "káva"
+        },
+        "image": {
+            "S": "kava_tonic.png"
+        },
+        "mainComponent": {
+            "S": "Tonic"
+        },
+        "category": {
+            "S": "Non-Alcoholic"
+        },
+        "drink": {
+            "S": "Espresso Tonic"
+        }
+    }
+]

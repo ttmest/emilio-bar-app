@@ -1,0 +1,68 @@
+[
+    {
+        "value": {
+            "BOOL": false
+        },
+        "lastUpdated": {
+            "S": "2025-01-01T16:31:54+00:00"
+        },
+        "configurationId": {
+            "S": "OpenHours"
+        }
+    },
+    {
+        "lastUpdated": {
+            "S": "2025-01-01T16:31:54+00:00"
+        },
+        "configurationId": {
+            "S": "Other"
+        },
+        "translate-cz": {
+            "S": "Ostatní koktejly"
+        }
+    },   
+    {
+        "lastUpdated": {
+            "S": "2025-01-01T16:31:54+00:00"
+        },
+        "configurationId": {
+            "S": "Non-Alcoholic"
+        },
+        "translate-cz": {
+            "S": "Nealko koktejly"
+        }
+    },
+    {
+        "lastUpdated": {
+            "S": "2025-01-01T16:31:54+00:00"
+        },
+        "configurationId": {
+            "S": "Vodka"
+        },
+        "translate-cz": {
+            "S": "Koktejly z Vodky"
+        }
+    },
+    {
+        "lastUpdated": {
+            "S": "2025-01-01T16:31:54+00:00"
+        },
+        "configurationId": {
+            "S": "Gin"
+        },
+        "translate-cz": {
+            "S": "Koktejly z Ginu"
+        }
+    },
+    {
+        "lastUpdated": {
+            "S": "2025-01-01T16:31:54+00:00"
+        },
+        "configurationId": {
+            "S": "Rum"
+        },
+        "translate-cz": {
+            "S": "Koktejly z Rumu"
+        }
+    }
+]
